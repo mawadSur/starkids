@@ -1,0 +1,2 @@
+# starkids
+React Native app
