@@ -16,6 +16,10 @@ A React Native onboarding flow for a family task management app.
   - `npm install @react-native-picker/picker`
 - Navigation stack/gestures (already listed in package.json):
   - `npm install @react-navigation/native @react-navigation/stack react-native-gesture-handler react-native-reanimated react-native-safe-area-context react-native-screens`
+- Tailwind/NativeWind styling:
+  - `npm install nativewind`
+  - `npm install --save-dev tailwindcss`
+  - Babel already has `nativewind/babel`; `tailwind.config.js` is included.
 
 ## Setup
 ```
@@ -54,6 +58,7 @@ import ChildProfileSetupScreen from './src/screens/ChildProfileSetupScreen';
 - Social buttons currently show placeholder icons/alerts; connect to your auth provider when ready.
 - Form validation covers basic email format and password confirmation. Parent profile validates name + email. Children count enforces a minimum of 1.
 - `babel.config.js` is configured with the Reanimated plugin; keep it in place for navigation/gestures to work.
+- Tailwind/NativeWind is wired (babel + config). Run `npx tailwindcss init` if you need to regenerate config; use `className` props via NativeWind for production styling.
 
 ## Windows tips (Android)
 - Run commands from **PowerShell** or **CMD**, not WSL, so Android tooling and node paths resolve correctly.
