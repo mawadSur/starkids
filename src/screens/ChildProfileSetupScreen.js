@@ -59,7 +59,7 @@ export default function ChildProfileSetupScreen({ navigation, route }) {
 
   const handleAddChild = () => {
     if (!name.trim()) {
-      Alert.alert('Missing name', 'Please add the child's name to continue.');
+      Alert.alert('Missing name', "Please add the child's name to continue.");
       return;
     }
 
